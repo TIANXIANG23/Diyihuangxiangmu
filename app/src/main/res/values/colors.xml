@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="button_bg_color_a">#FDABAC</color>
+    <color name="button_bg_color_b">#D53D3C</color>
+
+    <color name="horizontal_split_line_style_1">#BBBBBC</color>
+    <color name="vertical_split_line_style_1">#ACACAD</color>
+
+    <color name="text_bg_color_a">#222222</color>
+    <color name="text_bg_color_b">#999999</color>
+    <color name="text_bg_color_c">#b9b9b9</color>
+    <color name="text_bg_color_d">#494949</color>
+    <color name="text_bg_color_e">#8e8e8e</color>
+    <color name="text_bg_color_f">#6281ad</color>
+    <color name="text_bg_color_g">#ffffff</color>
+    <color name="text_bg_color_h">#e4e2e2</color>
+    <color name="text_bg_color_r">#43dd1b</color>
+
+</resources>

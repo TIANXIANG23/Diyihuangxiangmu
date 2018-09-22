@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/itm2_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/itm2_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="h,1.5:1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/itm2_image1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/itm2_title"
+        app:layout_constraintTop_toBottomOf="@+id/itm2_title"
+        app:srcCompat="@drawable/zhanwei" />
+
+    <ImageView
+        android:id="@+id/itm2_image1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintDimensionRatio="h,1.5:1"
+        app:layout_constraintEnd_toStartOf="@+id/itm2_image2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itm2_image"
+        app:layout_constraintTop_toTopOf="@+id/itm2_image"
+        app:srcCompat="@drawable/zhanwei" />
+
+    <ImageView
+        android:id="@+id/itm2_image2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintDimensionRatio="h,1.5:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itm2_image1"
+        app:layout_constraintTop_toTopOf="@+id/itm2_image1"
+        app:srcCompat="@drawable/zhanwei" />
+
+    <TextView
+        android:id="@+id/itm2_xin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="搜狐新闻"
+        app:layout_constraintStart_toStartOf="@+id/itm2_image"
+        app:layout_constraintTop_toBottomOf="@+id/itm2_image" />
+
+    <TextView
+        android:id="@+id/itm2_gentie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="2.2万跟帖"
+        app:layout_constraintBottom_toBottomOf="@+id/itm2_xin"
+        app:layout_constraintStart_toEndOf="@+id/itm2_xin"
+        app:layout_constraintTop_toTopOf="@+id/itm2_xin" />
+
+    <TextView
+        android:id="@+id/itm2_shijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="15分钟前"
+        app:layout_constraintBottom_toBottomOf="@+id/itm2_gentie"
+        app:layout_constraintStart_toEndOf="@+id/itm2_gentie"
+        app:layout_constraintTop_toTopOf="@+id/itm2_gentie" />
+
+    <ImageView
+        android:id="@+id/itm2_cha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/itm2_shijian"
+        app:layout_constraintEnd_toEndOf="@+id/itm2_image2"
+        app:layout_constraintTop_toTopOf="@+id/itm2_shijian"
+        app:srcCompat="@drawable/news_x" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:backgroundTint="#aaa"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itm2_xin" />
+</android.support.constraint.ConstraintLayout>
+

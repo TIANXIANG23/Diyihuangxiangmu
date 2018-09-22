@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/text_bg_color_g"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/register_iv_btn_fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_fanhui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/register_iv_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toEndOf="@+id/register_iv_btn_fan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/register_iv_btn_touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/register_touxiang" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/register_touxiang"
+        android:textColor="@color/text_bg_color_a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_iv_btn_touxiang" />
+
+    <EditText
+        android:id="@+id/register_etv_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/transparent"
+        android:gravity="center|start"
+        android:hint="@string/register_name"
+        android:maxLength="12"
+        android:textSize="13.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/view3"
+        style="@style/Firstga.split_line_horizontal"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_etv_phone_number" />
+
+    <TextView
+        android:id="@+id/register_iv_btn_tiaoguo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_tiao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resgister_iv_btn_wancheng" />
+
+    <Button
+        android:id="@+id/resgister_iv_btn_wancheng"
+        android:layout_width="0dp"
+        android:layout_height="43.5dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/register_button_selector"
+        android:text="@string/register_wancheng"
+        android:textColor="@color/text_bg_color_g"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+      <FrameLayout
+          android:id="@+id/login_register_edite_pic"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          app:layout_constraintBottom_toTopOf="@+id/login_register_btn_edite_pic_ok"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+          android:id="@+id/login_register_btn_edite_pic_ok"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="确定"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/login_register_btn_edite_pic_cancle"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/login_register_edite_pic" />
+
+      <Button
+          android:id="@+id/login_register_btn_edite_pic_cancle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="取消"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toEndOf="@+id/login_register_btn_edite_pic_ok" />
+
+      <android.support.constraint.Group
+          android:id="@+id/group"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:constraint_referenced_ids="login_register_btn_edite_pic_ok,login_register_btn_edite_pic_cancle,login_register_edite_pic" />
+
+      <android.support.constraint.Group
+          android:id="@+id/group2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:constraint_referenced_ids="register_iv_btn_fan,register_iv_btn_close,register_iv_btn_touxiang,resgister_iv_btn_wancheng,textView4,register_etv_phone_number,view3,register_iv_btn_tiaoguo" />
+</android.support.constraint.ConstraintLayout>

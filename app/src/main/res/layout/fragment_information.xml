@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:drawableTop="@drawable/rb_chat_selecto"
+            android:checked="true"
+            android:text="资讯"
+            style="@style/bottom_tab"/>
+        <RadioButton
+            android:id="@+id/rb_contacts"
+            android:drawableTop="@drawable/rb_contacts_selecto"
+            android:text="话题"
+            style="@style/bottom_tab"/>
+        <RadioButton
+            android:id="@+id/rb_discovery"
+            android:drawableTop="@drawable/rb_discovery_selector"
+            android:text="我的"
+
+            style="@style/bottom_tab"/>
+
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radiogroup"
+        />
+
+</RelativeLayout>
